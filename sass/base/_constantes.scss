@@ -1,0 +1,56 @@
+:root{   
+    
+    /* Dark mode */
+    @media (prefers-color-scheme: dark) {
+        --clr--text: rgba(255,255,255,.7);
+        // --color: rgba(255,198,0,.7);
+        // --clr--btn:
+        // --bg--img: url(../../img/12.jpg);
+        // --bg--pos: center;
+        --bg--size: cover;
+        --bg--img: url(../../img/1.jpg);
+        --bg--size: normal;
+        --clr--text--btn: #FFF5;
+
+    }
+
+    /* Light mode */
+    @media (prefers-color-scheme: light) {
+        --clr--text: rgba(20,30,39,.7);
+        // --color: rgba(58,56,69,.7);
+        
+        // --clr--btn:
+        --bg--pos: center;
+        --bg--size: cover;
+        --bg--img: url(../../img/12.jpg);
+        --clr--text--btn: #141E2750;
+    }
+
+    /* Variables Globales*/
+    --background: rgba(255,255,255,.05);
+    --br: 10px;
+    --border: solid 1px rgba(255,255,255,.1);
+    --bshadow: 3px 3px 10px 1px rgba(0,0,0,.5);
+    --bdfilter:  blur(6px);
+
+}
+.hidden {
+    display: none !important;
+}
+
+.glass {
+    background-color: var(--background);
+    -webkit-backdrop-filter: var(--bdfilter);
+    backdrop-filter: var(--bdfilter);
+    border: var(--border);
+    border-radius: var(--br);
+    box-shadow: var(--bshadow);
+}
+
+.btn-active {
+    // box-shadow: 0 .1rem .57rem .1rem var(--clr--text);
+    box-shadow: 0 .1rem .57rem .1rem var(--clr--text--btn);
+
+    // box-shadow: 0 2px 5px .5px var(--clr--text--btn);
+
+}
