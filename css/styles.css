@@ -94,6 +94,7 @@ body {
 
 .glass {
   background-color: var(--background);
+  -webkit-backdrop-filter: var(--bdfilter);
   backdrop-filter: var(--bdfilter);
   border: var(--border);
   border-radius: var(--br);
@@ -110,8 +111,8 @@ body {
 }
 .container {
   max-width: 1200px;
+  max-height: 1000px;
   width: 80%;
-  height: 80%;
   margin: 5vh auto;
   display: flex;
   align-items: center;
@@ -134,6 +135,7 @@ body {
 }
 .container__sidebar {
   width: 20%;
+  max-height: 100%;
 }
 @media only screen and (max-width: 75em) {
   .container__sidebar {
@@ -216,7 +218,7 @@ body {
   display: inline-block;
   width: 80%;
   color: var(--clr--text);
-  background-color: #f0f0f006;
+  background-color: rgba(240, 240, 240, 0.0235294118);
   font-size: 1.5rem;
   padding: 0.2rem 0;
   margin: 0 auto;
@@ -315,7 +317,7 @@ body {
   width: 1.72rem;
   height: 1.72rem;
   background: #24ecff;
-  box-shadow: 0 0 0 0.57rem #24ecff33, 0 0 0 1.15rem #24ecff22, 0 0 0 2.3rem #24ecff11, 0 0 2.3rem #24ecff, 0 0 5.74rem #24ecff;
+  box-shadow: 0 0 0 0.57rem rgba(36, 236, 255, 0.2), 0 0 0 1.15rem rgba(36, 236, 255, 0.1333333333), 0 0 0 2.3rem rgba(36, 236, 255, 0.0666666667), 0 0 2.3rem #24ecff, 0 0 5.74rem #24ecff;
 }
 .adorno__container__ring:nth-child(2) {
   animation: animate2 4s linear infinite;
@@ -333,7 +335,7 @@ body {
   width: 1.72rem;
   height: 1.72rem;
   background: #93ff2d;
-  box-shadow: 0 0 0 0.57rem #93ff2d33, 0 0 0 1.15rem #93ff2d22, 0 0 0 2.3rem #93ff2d11, 0 0 2.3rem #93ff2d, 0 0 5.74rem #93ff2d;
+  box-shadow: 0 0 0 0.57rem rgba(147, 255, 45, 0.2), 0 0 0 1.15rem rgba(147, 255, 45, 0.1333333333), 0 0 0 2.3rem rgba(147, 255, 45, 0.0666666667), 0 0 2.3rem #93ff2d, 0 0 5.74rem #93ff2d;
 }
 .adorno__container__ring:nth-child(3) {
   animation: animate2 4s linear infinite;
@@ -353,7 +355,7 @@ body {
   width: 1.72rem;
   height: 1.72rem;
   background: #e41cf8;
-  box-shadow: 0 0 0 0.57rem #e41cf833, 0 0 0 1.15rem #e41cf822, 0 0 0 2.3rem #e41cf811, 0 0 2.3rem #e41cf8, 0 0 5.74rem #e41cf8;
+  box-shadow: 0 0 0 0.57rem rgba(228, 28, 248, 0.2), 0 0 0 1.15rem rgba(228, 28, 248, 0.1333333333), 0 0 0 2.3rem rgba(228, 28, 248, 0.0666666667), 0 0 2.3rem #e41cf8, 0 0 5.74rem #e41cf8;
 }
 @keyframes animate {
   0% {
