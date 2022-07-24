@@ -73,7 +73,7 @@ body {
   :root {
     --clr--text: rgba(255,255,255,.7);
     --bg--size: cover;
-    --bg--img: url(../../img/1.jpg);
+    --bg--img: url(../img/1.jpg);
     --bg--size: normal;
     --clr--text--btn: #FFF5;
   }
@@ -83,7 +83,7 @@ body {
     --clr--text: rgba(20,30,39,.7);
     --bg--pos: center;
     --bg--size: cover;
-    --bg--img: url(../../img/12.jpg);
+    --bg--img: url(../img/12.jpg);
     --clr--text--btn: #141E2750;
   }
 }
